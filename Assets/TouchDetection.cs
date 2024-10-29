@@ -29,7 +29,7 @@ public class TouchDetection : MonoBehaviour
         distance = DistanceCalculator(cube, fingertip);
 
         // update hit status and detect entry/exit events
-        isHit = (distance < touch_threshold);
+        isHit = distance < touch_threshold;
         isEnter = isHit && !wasHit;
         isExit = !isHit && wasHit;
 
