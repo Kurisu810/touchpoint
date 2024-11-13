@@ -1,6 +1,11 @@
-# unity-dev-workshop-and-hw4
+# TouchPoint: Gesture-Based Centralized Control for Smart Devices
  
-Open this project in Unity
+## Background
 
+Smart devices such as speakers, light bulbs, and appliances are becoming increasingly popular due to their affordability and the convenience they offer with voice control. These devices, however, are often designed to work exclusively with products from the same company, creating a strategy to keep consumers within a single digital ecosystem. As a result, smart devices typically have unique wake words such as “hello Google” and “hello Alexa.” In addition, consumers are often required to install a branded mobile application prior to using the device, such as Google Home and Amazon Alexa. Thus, with more and more players in the market, it becomes increasingly difficult and frustrating for consumers to own multiple smart devices from different companies; instead, consumers usually stick with products within the same ecosystem for convenience, which greatly limits their options and raises the barrier for new market entrants.
 
-There are two scenes. One is the template for Assignment #4, the other one is the example scene we used during the workshop.
+## Introduction
+
+In this project, we aim to create an application that unifies the control of smart devices with hand gestures in the context of next-generation wearable XR devices. The focus of the project is on designing a user-friendly digital interface that does not rely on voice commands to control smart devices of all companies. To demonstrate our design, we used an Oculus Quest 2 VR headset to simulate a next-generation XR device, controlling a smart speaker and a smart light bulb. Instead of relying on the AR passthrough feature (which the Quest 2 does not support), we chose to focus our efforts on UI design rather than integrating with actual smart devices. As a result, we opted for a simulated environment with virtual smart devices.
+
+In this application, the user wakes up smart devices by pointing at them with their index finger. After a short period of time, the device’s outline will glow, indicating a successful selection. In the case where the smart device is not within line of sight or by preference, the user may also raise their fist to summon a radial menu containing all their smart devices. Next, a tailored set of UI elements for the specific device will appear, which the user can interact with using hand gestures to issue their commands. After which, the user may swipe to either the left or the right to end the interaction, or the software will automatically return to its default state after a short period of time.
